@@ -31,42 +31,67 @@
 
       .box1 {
         background-color: red;
-        position: absolute;
-        /* left: 30px; */
+        /* position: absolute;
         z-index: 1;
         top: 0;
-        left: 0;
-      }
-
-      .box2 {
-        background-color: green;
-        right: 0;
-        top: 0;
-        position: absolute;
-        z-index: 3;
-      }
-
-      .box3 {
-        background-color: blue;
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        bottom: 0;
-      }
-
-      .box4 {
-        background-color: rgb(120, 75, 82);
-        position: absolute;
-        right: 0;
-        bottom: 0;
-      }
-
-      .box5 {
+        left: 0; */
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        /* transform: translateX(-50%); */
+        transition-property: top, left, transform;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+      }
+
+      .box5:hover ~ .box1 {
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+      }
+
+      .box2 {
+        background-color: green;
+        /* right: 0;
+        top: 0;
+        position: absolute;
+        z-index: 3; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .box3 {
+        background-color: blue;
+        /* position: absolute;
+        z-index: 2;
+        left: 0;
+        bottom: 0; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .box4 {
+        background-color: rgb(120, 75, 82);
+        /* 
+        position: absolute;
+        right: 0;
+        bottom: 0; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .box5 {
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-color: aqua;
       }
 
@@ -95,30 +120,12 @@
     </style>
   </head>
   <body>
-    <!-- <ul>
-          <li>sjnkjfdsfg</li>
-          <li>sjnkjfdsfg</li>
-      <li>sjnkjfdsfg</li>
-    </ul> -->
-    <!-- <h1>Nguyễn Danh Phương</h1>
-    <ul>
-      <li>sjnkjfdsfg</li>
-      <li>sjnkjfdsfg</li>
-      <li>sjnkjfdsfg</li>
-    </ul> -->
-
-    <!-- <div class="menu">
-      <h1>lksdlsmfkd</h1>
-    </div> -->
     <div class="container">
-      <!-- <h1>skjdfn</h1> -->
+      <div class="box box5">5</div>
       <div class="box box1">1</div>
       <div class="box box2">2</div>
       <div class="box box3">3</div>
       <div class="box box4">4</div>
-      <div class="box box5">4</div>
     </div>
-
-    <div>adksnfskjdfnksndfkjsndfkj</div>
   </body>
 </html>
