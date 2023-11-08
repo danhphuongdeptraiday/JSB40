@@ -42,3 +42,9 @@
 .box3 {
   background-color: red;
 }
+
+@media screen and (max-width: 800px) {
+  .box2 {
+    background-color: red;
+  }
+}

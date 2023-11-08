@@ -23,18 +23,19 @@
       }
 
       .show_box {
-        height: 30px;
+        height: 0px;
         width: 90px;
         background-color: red;
-        transition-property: margin-left;
+        transition-property: height;
         transition-duration: 1s;
         transition-timing-function: ease-in-out;
         overflow: hidden;
-        margin-left: -100px;
+        /* margin-left: -100px; */
       }
 
       #myBtn:hover ~ .show_box {
-        margin-left: 0px;
+        height: 30px;
+        /* margin-left: 0px; */
         /* height: 0px; */
         /* line-height: 0px; */
       }
@@ -48,6 +49,18 @@
       #myCheckBox:checked ~ .box {
         background-color: red;
       }
+
+      .click_container {
+        position: relative;
+      }
+
+      .click_container input {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0px;
+        opacity: 0;
+      }
     </style>
   </head>
   <body>
@@ -60,8 +73,11 @@
     </div>
 
     <div class="click_container">
+      <h1>Click vào đây</h1>
       <input type="checkbox" name="" id="myCheckBox" />
       <div class="box">My Box</div>
     </div>
+
+    <a href="./trangmoi.html" target="_blank">Dẫn tới trang mới</a>
   </body>
 </html>
